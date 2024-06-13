@@ -42,8 +42,8 @@ def AddDestino():
             precioDestino = round(float(precioDestino),2)
             if precioDestino <= 0:
                 print("\n<---((( ¡¡El precio tiene que ser mayor que 0!! )))--->\n")
-            elif precioDestino > 99999.99:
-                print("\n<---((( ¡¡El precio no puede tener mas de 4 ceros!! )))--->\n")
+            elif precioDestino > 999999.99:
+                print("\n<---((( ¡¡El precio no puede tener mas de 6 ceros!! )))--->\n")
             else:
                 break
         except:
