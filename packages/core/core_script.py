@@ -39,9 +39,11 @@ def AddDestino():
     while True:
         precioDestino = input("Introduzca el precio del nuevo destino ---> : ")
         try:
-            precioDestino = float(precioDestino)
+            precioDestino = round(float(precioDestino), 2)
             if precioDestino <= 0:
                 print("\n<---((( ¡¡El precio tiene que ser mayor que 0!! )))--->\n")
+            elif len(precioDestino) > 5:
+                print("\n<---((( ¡¡El precio no puede tener mas de 4 ceros!! )))--->\n")
             else:
                 break
         except:
